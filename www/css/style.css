@@ -1,0 +1,421 @@
+*{ margin: 0; padding: 0; }
+
+@font-face {
+    font-family: Proxima Nova;
+    src: url("../fonts/proximanova-regular.otf"); 
+}
+@font-face {
+    font-family: BlackJack Regular;
+    src: url("../fonts/black_jack.ttf"); 
+}
+
+/* General */
+body {
+    font: 12px Proxima Nova, sans-serif;
+    margin: 0;
+    background: #fff;
+}
+.clear {
+	clear: both;
+	font-size: 0px;
+}
+wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    overflow: hidden;
+}
+a {
+	text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    color: #000;
+}
+button {
+    font: 15px Proxima Nova, serif;
+    text-transform: uppercase;
+    padding: 15px;
+    width: 170px;
+    height: 60px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+/* Header */
+header { 
+    background: url("../images/header-bg.png");
+    background-size: cover;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.logo { 
+    background: url("../images/logo.png") no-repeat; 
+    height: 100px; 
+    width: 100px; 
+    float: left; 
+    margin-left: 100px;
+    border-bottom: 4px solid #0da9e5;
+    box-shadow: 10px 10px 0 0 #27b0e6;
+}
+.logo:hover { 
+    transform: scale(1.1); 
+    border-bottom: 4px solid #e79b63;
+    box-shadow: none;
+    transition: all 0.2s ease-in-out;
+}
+.right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 150px;
+}
+button[name="menu"] {  
+    background: url("../images/nav.png") no-repeat;
+    height: 30px;
+    width: 30px; 
+    padding: 0;
+    background-position: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+}
+.meel {
+    font: 70px BlackJack Regular, serif;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.stupidly {
+    font: 35px Proxima Nova, sans-serif;
+    color: #fff;
+    font-weight: 100;
+}
+.stupidly span {
+    font-weight: 800;
+    font-style: italic;
+}
+/* Button "Download" */
+button[name="download"] {
+    background: rgba(255, 255, 255, 0.1);
+    background-position: center;
+    color: #fff;
+    border: 2px solid #fff;
+}
+button[name="download"] img{
+    padding-left: 10px;
+}
+button[name="download"]:hover {
+    background-color: rgba(255, 0, 0, 0.6);
+    transition: all 0.2s ease-in;
+}
+/* Image "Iphone" */
+.iphone {
+    background: url("../images/iphone5.png") no-repeat; 
+    height: 480px; 
+    width: 230px; 
+    float: left; 
+    margin-left: 100px;
+}
+/* Aside "Hide" Show-hide menu */
+#hide {
+    background: url("../images/nav-overlay-bg.png");
+    background-size: cover;
+    height: 650px;
+    overflow: hidden;
+    display: none;
+    position: relative;
+    z-index: 2;
+    margin-top: -650px;
+}
+.right-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 150px;
+}
+button[name="menu-hide"] {  
+    background: url("../images/close.png") no-repeat;
+    background-position: center;
+    height: 30px;
+    width: 30px; 
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 50px;
+    list-style: none;
+    width: 300px;
+}
+.list li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    font: 18px Proxima Nova, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+.list li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    padding-left: 20px;
+}
+.list li a:hover {
+    color: #4eacdd;
+}
+.list li img {
+    padding-right: 20px;
+}
+/* Article "Ipad" */
+.ipad {
+    background: #f4f4f4;
+    height: 650px;
+    overflow: hidden;
+}
+.left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 100px;
+    margin-top: 140px;
+    width: 520px;
+}
+.longwinded {
+    font: 40px Proxima Nova, sans-serif;
+    color: #545454;
+    margin-bottom: 30px;
+}
+.paddock {
+    font: 16px Proxima Nova, sans-serif;
+    color: #7e7e7e;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.ripper {
+    font: 16px Proxima Nova, sans-serif;
+    font-style: italic;
+    color: #7e7e7e;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    line-height: 1.5;
+    border-left: 5px solid #4eacdd;
+}
+/* Button "Say Hello" */
+button[name="hello"] {
+    background: rgba(255, 255, 255, 0.1);
+    color: #14af8f;
+    border: 2px solid #14af8f;
+}
+button[name="hello"] img{
+    padding-left: 10px;
+}
+button[name="hello"]:hover {
+    background-color: rgba(255, 255, 0, 0.6);
+    transition: all 0.2s ease-in;
+}
+/* Image "Tablet" */
+.tablet {
+    display: block;
+    position: relative;
+    bottom: 350px;
+    left: 80px;
+    background: url("../images/ipad-flat.png") no-repeat; 
+    height: 580px; 
+    width: 410px; 
+    float: right; 
+    overflow: hidden;
+}
+/* Article "Gadgets" */
+.gadgets, .contact {
+    background: #fff;
+    height: 650px;
+    overflow: hidden;
+}
+.right-position {
+    display: block;
+    float: right;
+    width: 390px;
+    margin-top: 120px;
+    margin-right: 70px;
+}
+.get {
+    font: 40px Proxima Nova, sans-serif;
+    color: #7e7e7e;
+    margin-bottom: 30px;
+}
+.ciggies {
+    font: 16px Proxima Nova, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: #474e5d;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.pash {
+    font: 16px Proxima Nova, sans-serif;
+    color: #7e7e7e;
+    line-height: 1.5;
+}
+/* Image "Gadget_all" */
+.gadget_all {
+    display: block;
+    position: relative;
+    bottom: 130px;
+    left: -60px;
+    background: url("../images/devices.png") no-repeat; 
+    height: 430px; 
+    width: 840px; 
+    float: left; 
+    overflow: hidden;
+}
+/* Button "View or dribble" */
+button[name="view"] {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ea4c89;
+    border: 2px solid #ea4c89;
+    width: 220px;
+}
+button[name="view"] img{
+    padding-left: 15px;
+}
+button[name="view"]:hover {
+    background-color: rgba(255, 150, 0, 0.5);
+    transition: all 0.2s ease-in;
+}
+/* Section "Like" */
+.align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.like { 
+    background: url("../images/bg.png");
+    background-size: cover;
+    height: 325px;
+    overflow: hidden;
+}
+.see {
+    font: 40px Proxima Nova, sans-serif;
+    color: #fff;
+    margin-top: 80px;
+}
+/* Button "Buy" */
+button[name="buy"] {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 2px solid #fff;
+    width: 220px;
+}
+button[name="buy"] img{
+    padding-left: 10px;
+}
+button[name="buy"]:hover {
+    background-color: rgba(255, 60, 0, 0.6);
+    transition: all 0.2s ease-in;
+}
+/* Article "Contact" */
+.social {
+    display: flex;
+    padding: 20px;
+    margin: auto;
+    list-style: none;
+    justify-content: center;
+    width: 350px;
+}
+.social-icons {
+    padding: 10px;
+    width: 56px;
+    height: 56px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+.social-icons img:hover {
+    background-color: rgba(255, 200, 100, 0.6);
+    opacity: 0.5;
+    transform: scale(1.1);
+    border-radius: 50%;
+    transition: all 0.1s;
+}
+/* Form "Email" */
+.forms-align {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+}
+.forms {
+    display: flex;
+    align-self: center;
+}
+input[name="email"] {
+    width: 170px;
+    height: 20px;
+    font: 14px Proxima Nova, sans-serif;
+    color: #d3d3d3;
+    font-style: italic;
+    border: none;
+    margin-right: 30px;
+}
+label[name="email"] {
+    font: 16px Proxima Nova, sans-serif;
+    line-height: 20px;
+    color: #545454;
+    font-style: italic;
+    font-weight: bold;
+    margin-right: 30px;
+}
+input[type="image"] {
+    display: block;
+    width: 16px;
+    height: 14px;
+    padding-top: 3px;
+}
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background: #fff;
+    margin: auto;
+    font: 12px Proxima Nova, sans-serif;
+    font-weight: bold;
+    white-space: pre;
+    color: #696969;
+}
+.footer a {
+    color: #6dc5ea;
+}
+.footer span {
+    font-style: italic;
+}
+/* Scrollup */
+.scrollup {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    opacity: 0.5;
+    bottom: 20px;
+    right: 60px;
+    display: none;
+    text-indent: -9999px;
+    background: url("../images/to-top.png") no-repeat;
+    border-radius: 50%;
+}
+.scrollup:hover {
+    opacity: 1;
+}

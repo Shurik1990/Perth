@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <title>Perth</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.scrollup').fadeIn();
+                    } else {
+                $('.scrollup').fadeOut();
+                    }
+                });
+            $('.scrollup').click(function(){
+                $("html, body").animate({ scrollTop: 0 }, 600);
+                    return false;
+                 });
+            });
+        </script>
+	</head>
+	<body>
+         <wrapper>
+            <header>
+                <div class="container">
+                    <a href="" class="logo"></a>
+                    <div class="right-column">
+                        <form action=""><button id="menu" name="menu"></button></form>
+                        <div class="meel">Meet Perth,</div>
+                        <div class="stupidly">A stupidly simple, flat PSD. Oh yeah, it’s <span>free</span> too!</div>
+                        <form action=""><button name="download">Download<img src="images/dl-icon.png"></button></form>
+                    </div>
+                    <div class="iphone"></div>
+                </div>
+            </header>
+            <div class="clear"></div>
+              <div id="hide">
+                <div class="container">
+                    <div class="right-icon">
+                         <form action=""><button id="menu-hide" name="menu-hide"></button></form>
+                    </div>
+                    <div class="list-center">
+                    <ul class="list">
+                        <li><a href=""><img src="images/home-icon.png">home</a></li>
+                        <li><a href=""><img src="images/about-me-icon.png">about me</a></li>
+                        <li><a href=""><img src="images/portfolio-icon.png">portfolio</a></li>
+                        <li><a href=""><img src="images/contact-icon.png">drop me a line</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <article class="ipad">
+                <div class="container">
+                    <div class="left-column">
+                        <div class="longwinded">A Longwinded Header</div>
+                        <div class="paddock">She'll be right paddock how lets throw a ciggies. She'll be right ute to built like a doovalacky. We're going rack off bloody she'll be right pash. You little ripper tucker also get a dog up ya greenie.</div>
+                        <div class="ripper">You little ripper boozer no worries she'll be right holy dooley!. Come a freo also as cross as a your shout. Lets throw a khe sanh flamin dead dingo's donger. Lets get some fisho with grab us a trackie dacks.</div>
+                        <form action=""><button name="hello">Say Hello<img src="images/icon.png"></button></form>
+                    </div>
+                    <div class="tablet"></div>
+                </div>
+            </article>
+            <div class="clear"></div>
+            <article class="gadgets">
+                <div class="container">
+                    <div class="right-position">
+                        <div class="get">Get a Dog Up Ya’</div>
+                        <div class="ciggies">She'll be right paddock how lets throw a ciggies. She'll be right ute to built like a doovalacky.</div>
+                        <div class="pash">We're going rack off bloody she'll be right pash. You little ripper tucker also get a dog up ya greenie.</div>
+                        <form action=""><button name="view">View or dribble<img src="images/dribbble-icon.png"></button></form>
+                    </div>
+                    <div class="gadget_all"></div>
+                </div>
+            </article>
+            <div class="clear"></div>
+            <section class="like">
+                <div class="container">
+                    <div class="align">
+                        <div class="see">Like What You See?</div>
+                        <form action=""><button name="buy">Buy  me a beer?<img src="images/beer-icon.png"></button></form>
+                    </div>
+                </div>
+            </section>
+            <div class="clear"></div>
+            <article class="contact">
+                <div class="container forms-align">
+                    <ul class="social">
+                        <li class="social-icons"><a href=""><img src="images/dribbble.png"></a></li>
+                        <li class="social-icons"><a href=""><img src="images/facebook.png"></a></li>
+                        <li class="social-icons"><a href=""><img src="images/twitter.png"></a></li>
+                        <li class="social-icons"><a href=""><img src="images/mail.png"></a></li>
+                    </ul>
+                    <form action="" class="forms">
+                        <label class="formname" name="email">Newsletter Subscription</label>
+                        <input type="email" name="email" placeholder="Enter Email" required />
+                        <input type="image" title="Отправить" src="images/icon_mail.png">
+                    </form>
+                </div>
+            </article>
+            <div class="clear"></div>
+            <footer>
+                <div class="footer">© 2013<a href=""> Perth.</a><span> Breeding pixels since the naughties.</span></div>
+                <a href="" class="scrollup">Наверх</a>
+            </footer>
+            <div class="clear"></div>
+        </wrapper>
+        <script type="text/javascript" src="js/fade.js"></script>
+        <script type="text/javascript" src="js/plugins-scroll.js"></script>
+        <script>
+        // Skroll-page
+        $(document).ready(function() {
+            //Chrome Smooth Scroll
+            try {
+                $.browserSelector();
+                if($("html").hasClass("chrome")) {
+                    $.smoothScroll();
+                }
+            } catch(err) {
+            };
+        });
+    </script> 
+	</body>
+</html>
